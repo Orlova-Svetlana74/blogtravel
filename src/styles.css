@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/beloemor.jpg'); /* Путь к вашему изображению */
+  background-size: cover; /* Заставляет изображение занимать весь экран */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  color: white; /* Цвет текста для лучшей читаемости на фоне */
+  height: 100%;
+}
+header {
+  background: rgba(97, 97, 97, 0.7); /* Полупрозрачный фон для заголовка */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background: rgba(51, 51, 51, 0.7); /* Полупрозрачный фон для подвала */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.blog-post {
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Полупрозрачная граница для постов */
+  margin: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для постов */
+  width: 300px; /* Ширина блока поста */
+  text-align: center;
+  transition: transform 0.2s;
+}
+.blog-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.blog-post:hover {
+  transform: scale(1.02);
+}
+.blog-post img {
+  max-width: 100%; /* Адаптивное изображение */
+  height: auto; /* Сохраняет пропорции */
+}
+/* .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+
+.modal-content {
+  padding: 20px;
+  width: 80%;
+  color: #2c3e50;
+}
+
+.modal-image {
+  width: 150px;
+  height: auto;
+}
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* .image-container {
+
+} */
+p {
+  color: white;
+}
+.content {
+  color: #2c3e50;
+}
+h1 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+h2 {
+  color:#ffffff
+}
+.blog-text {
+  font-size: 30px;
+  color: rgb(244, 241, 241);
+  text-align: end;
+}
+
+.blog-section {
+  align-items: flex-end;
+  padding-right: 25px;
+  padding-top: 90px;
+}
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  /* width: 80%; */
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  max-height: 75vh; /* Максимальная высота модального окна */
+  overflow-y: auto; /* Включение вертикальной прокрутки */
+}
+
+.ReactModal__Content h2 {
+  margin-top: 0;
+}
+
+.ReactModal__Content button {
+  background: #35424a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.ReactModal__Content button:hover {
+  background: #2c3e50;
+}
+.image {
+  width: 300px;
+  height: auto;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.modal-image {
+  width: 48%; /* Задайте ширину изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  padding-top: 10px;
+}
+
+/* Переопределяем стили для лайтбокса */
+.ReactImageLightbox__image {
+  max-height: 80vh; /* Ограничиваем максимальную высоту изображения */
+  max-width: 90vw; /* Ограничиваем максимальную ширину изображения */
+  border-radius: 8px; /* Закругляем углы изображений */
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ReactImageLightbox__overlay {
+  background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+  z-index: 1000; /* Убедитесь, что лайтбокс выше других элементов */
+}
+
+.ReactImageLightbox__button--close {
+  color: white; /* Цвет кнопки закрытия */
+}
+
+.ReactImageLightbox__button--next,
+.ReactImageLightbox__button--prev {
+  color: white; /* Цвет кнопок навигации */
+}
+
+.ReactImageLightbox__button--next:hover,
+.ReactImageLightbox__button--prev:hover {
+  color: #ffcc00; /* Цвет кнопок навигации при наведении */
+}
+.imgstyle {
+  height: 250px;
+  width: auto;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.textpresent {
+  padding-left: 20px;
+  font-size: 28px;
+}
+.topstyle {
+  font-size: 50px;
+  color: #ffffff;
+  padding-left: 550px;
+  padding-top: 30px;
+}
+.subtitle {
+  font-size: 40px;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.blockpictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact {
+  padding-left: 20px;
+  font-size: 30px;
+}
+.contact_link {
+  color: #ffffff;
+  padding-left: 40px;
+  font-size: 35px;
+  text-decoration: none;
+}
+.toptext {
+  display: flex;
+  align-content: space-between;
+}
+.topstyle_contact {
+  color: #ffffff;
+  font-size: 50px;
+}
+.titlemodal {
+  color: #35424a;
+}
