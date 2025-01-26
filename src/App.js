@@ -5,7 +5,7 @@ import Home from './pages/home';
 import Blog from './pages/blog';
 import About from './pages/about';
 import Contact from './pages/contact';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import './styles.css'; // Импорт стилей
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 };

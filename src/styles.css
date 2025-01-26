@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('./images/beloemor.jpg'); /* Путь к вашему изображению */
-  background-size: cover; /* Заставляет изображение занимать весь экран */
-  background-position: center; /* Центрирует изображение */
+  background-size: cover;
+  /* background-position: center; */
   background-repeat: no-repeat; /* Не повторяет изображение */
   color: white; /* Цвет текста для лучшей читаемости на фоне */
   height: 100%;
