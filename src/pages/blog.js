@@ -135,7 +135,7 @@ const Blog = () => {
       <div className="blog-list">
         {posts.map((post) => (
           <div className="blog-post" key={post.id}>
-            <h2>{post.title}</h2>
+            <h2 className="title_post">{post.title}</h2>
             <img className="image" src={post.image} alt={post.title} />
             <p>{post.excerpt}</p>
             <button onClick={() => openModal(post)}>Читать далее</button>

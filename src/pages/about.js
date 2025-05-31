@@ -3,6 +3,8 @@ import uchasnikiRegaty from '../images/uchasniki_regaty.jpg'; // Импорти�
 import gonkaValgerda from '../images/gonka_Valgerda.jpg'; // Импортируем изображение
 import gamaun from '../images/gamaun.jpg'; // Импортируем изображение
 import kapitan from '../images/kapitan.jpg'; // Импортируем изображение
+import skazki from '../images/skazki.jpg'; // Импортируем изображение
+
 
 const About = () => {
   return (
@@ -10,6 +12,7 @@ const About = () => {
       <div className="toptext">
         <img src={uchasnikiRegaty} alt="uchasnikiRegaty" className="imgstyle" />
         <h1 className="topstyle">О нас</h1>
+        <img src={skazki} alt="skazki" className="imgstyle" />
       </div>
 
       <p className="textpresent">
