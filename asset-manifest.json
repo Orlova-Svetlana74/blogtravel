@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blogtravel/static/css/main.bb6038c1.css",
-    "main.js": "/blogtravel/static/js/main.91961d24.js",
+    "main.css": "/blogtravel/static/css/main.229b0d86.css",
+    "main.js": "/blogtravel/static/js/main.da4394b1.js",
     "static/js/488.2f13ec7a.chunk.js": "/blogtravel/static/js/488.2f13ec7a.chunk.js",
     "static/media/kivach5.jpg": "/blogtravel/static/media/kivach5.9cdd58321b9e7b62bd25.jpg",
     "static/media/kivach6.jpg": "/blogtravel/static/media/kivach6.b4799025b592b6335d2f.jpg",
@@ -31,6 +31,7 @@
     "static/media/kargopol.jpg": "/blogtravel/static/media/kargopol.38ed94a796fa4eaee157.jpg",
     "static/media/visozk1.jpg": "/blogtravel/static/media/visozk1.9e72b09be10fc4874773.jpg",
     "static/media/visozk3.jpg": "/blogtravel/static/media/visozk3.192f440e6eaa15123356.jpg",
+    "static/media/skazki.jpg": "/blogtravel/static/media/skazki.57a44144ffb6337ce387.jpg",
     "static/media/kargopol3.jpg": "/blogtravel/static/media/kargopol3.3a20dff170ff8090ed58.jpg",
     "static/media/gatchina2.jpg": "/blogtravel/static/media/gatchina2.9b64d447f4e17d4e8633.jpg",
     "static/media/gonka_Valgerda.jpg": "/blogtravel/static/media/gonka_Valgerda.51affb91a5839c2121d1.jpg",
@@ -44,12 +45,12 @@
     "static/media/gatchina.jpg": "/blogtravel/static/media/gatchina.753c605d4dba2978f3ca.jpg",
     "static/media/visozk6.jpg": "/blogtravel/static/media/visozk6.75db1b127de606a97e83.jpg",
     "index.html": "/blogtravel/index.html",
-    "main.bb6038c1.css.map": "/blogtravel/static/css/main.bb6038c1.css.map",
-    "main.91961d24.js.map": "/blogtravel/static/js/main.91961d24.js.map",
+    "main.229b0d86.css.map": "/blogtravel/static/css/main.229b0d86.css.map",
+    "main.da4394b1.js.map": "/blogtravel/static/js/main.da4394b1.js.map",
     "488.2f13ec7a.chunk.js.map": "/blogtravel/static/js/488.2f13ec7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb6038c1.css",
-    "static/js/main.91961d24.js"
+    "static/css/main.229b0d86.css",
+    "static/js/main.da4394b1.js"
   ]
 }
