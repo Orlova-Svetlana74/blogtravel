@@ -262,3 +262,27 @@ h2 {
 .titlemodal {
   color: #35424a;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  .text_top {
+    font-size: 30px;
+  }
+  .title_post {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+  .text_top {
+    font-size: 20px;
+  }
+  .title_post {
+    font-size: 15px;
+  }
+}
